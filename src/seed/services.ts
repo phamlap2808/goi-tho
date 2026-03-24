@@ -4,7 +4,14 @@
 import { getPayload } from 'payload'
 import config from '../payload.config'
 
-const services = [
+const services: Array<{
+  title: string
+  slug: string
+  icon: string
+  order: number
+  description: string
+  status: 'active' | 'hidden'
+}> = [
   {
     title: 'Sửa Điện',
     slug: 'sua-dien',
